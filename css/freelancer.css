@@ -16,15 +16,27 @@ p.small {
     font-size: 16px;
 }
 
-a,
+a { 
+    color: #fff;
+    background: transparent !important;
+}
 a:hover,
 a:focus,
 a:active,
-a.active {
-    outline: 0;
-    color: #4c9109;
-}
+a.active,
+#productos a:hover,
+#productos a:focus,
+#productos a:active,
+#productos a.active
 
+ {
+    outline: 0;
+    color: #ffa100 !important;
+    background: transparent !important;
+}
+#productos a {
+    color: #2c3e50 !important;
+}
 h1,
 h2,
 h3,
@@ -82,7 +94,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #5aa413;
+    background: #499055;
 }
 
 header .container {
@@ -183,7 +195,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #54993a;
+    background: #499055;
 }
 
 @media(max-width:767px) {
@@ -287,7 +299,7 @@ section.success {
     border: 0;
     border-radius: 0;
     font-size: 1.5em;
-    background: 0 0;
+    /*background: 0 0;*/
     box-shadow: none!important;
     resize: none;
 }
@@ -463,6 +475,7 @@ a.portfolio-link img {
 .receta label {
     float: left;
     clear: both;
+    font-size: 1.3em;
 }
 .receta p {
     font-size: 14px;
@@ -476,4 +489,8 @@ a.portfolio-link img {
 }
 .fa-search-plus:before {
     margin-right: 7px;
+}
+
+#contacto label {
+    margin-right: 10px;
 }
